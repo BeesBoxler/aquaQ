@@ -2,7 +2,7 @@ use std::{collections::HashSet, fs::read_to_string};
 
 fn main() {
     let input = read_to_string("input.txt").expect("No input.txt in directory");
-    let mut chunks = input.split_whitespace();
+    let chunks = input.split_whitespace();
     let number: usize = chunks
         .last()
         .expect("Malformed input")
